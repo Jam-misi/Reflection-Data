@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFLECTION</title>
+
+    <!-- Include PyScript CDN -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <!-- Add custom styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXQ5bnBrbTBuNDA0cTQybDUxNjV2ZzJpeHZyYmZtMmhzbDJndXJ5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/tCwyHLGtnk7sPGWUsX/giphy.gif');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .styled-paragraph {
+            color: #ffffff;
+            font-size: 1.2em;
+            background-color: #1B2A41;
+            padding: 20px;
+            border-radius: 8px;
+            border: 5px solid #ffffff;
+            width: 50%;
+            margin: 20px auto;
+            text-align: justify;
+            border-style: outset;
+        }
+        h1{
+            font-size: 60px;
+            color: #7378bd;
+            -webkit-text-stroke: 2px #c6c9cc;
+            border: 5px solid #ffffff;
+            background-color: #1B2A41;
+            text-align: center;
+            border-style: outset;
+
+            position: sticky;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>⚛》》◆ Data Privacy and Awareness Campaign ◆《《⚛</h1>
+
+    <!-- Define a div to hold the paragraph -->
+    <div id="output" class="styled-paragraph"></div>
+    <div id="output1" class="styled-paragraph"></div>
+    <div id="output2" class="styled-paragraph"></div>
+    <!-- PyScript block -->
+    <py-script>
+        # Python code to create and display HTML content
+
+        # Define the content of the paragraph
+        paragraph = """
+        Data Privacy is vital to our life, as privacy is very personal to our life it basically tells about us which makes it very sensitive and could potentially harm us if our privacy has been handed out to random people to take advantage and use against us. Being aware to these through campaigns will greatly help us to be more responsible and helps us to avoid these not tolerable actions by people taking our personal information. Understanding the importance of data privacy and being vigilant about how our information is handled can help prevent these risks. Campaigns that raise awareness about data privacy empower individuals to protect themselves by encouraging responsible online behaviors. Being a digital literate people with the knowledge to avoid participating and getting involve in actions that may compromise your personal information."""
+
+        # Find the div with id 'output' and set its innerHTML to the paragraph text
+        output_element = Element("output")
+        output_element.write(paragraph)
+
+        paragraph1 = """
+        Cybercriminals uses a lot of various tactics just to get a hold of your information such as downloading untrusted apps. I remember the time my account got hack through a app that I downloaded simply because I can’t afford to pay as I was still a student. It started with disseminating information about a particular advertisement to hack more accounts by using my own account. It also corrupted my computer and started to gain control of my other accounts that are log in on my computer. It even started accessing my brothers credit card through a Netflix account that I’m using on the computer which greatly shows how scary getting hack truly is, especially when used to do bad and for money that they’ll gain by stealing credit card information. This led to a lot of problem which led me to deleting all the data on the computer hoping that the hacker will not be able to access my computer anymore. It also costs money to repair my computer to install another operating system as the previous one was deleted. Another experience is from a scamming side, my Lola’s account on Facebook was hacked and started messaging people asking for money through G-cash which is punishable from Computer related Identity Theft which states the intentional acquisition, use, misuse, transfer, possession, alteration or deletion of identifying information belonging to another whether natural or juridical without right.  It’s very clear that a simple download or vulnerability across social media platforms and the world wide web could lead to severe consequences when proper safety measures aren’t met in the first place. 
+        """
+        output_element = Element("output1")
+        output_element.write(paragraph1)
+
+        paragraph2 = """
+        From this experience I got more aware through the campaign that we really have to be responsible on what we are clicking and downloading on the internet as it could greatly affect our life in the long term if not careful. A personal golden rule that I’ve got from the campaign is to treat your DEVICES as “someone” not something. Your mobile DEVICES can see, hear, feel and even think. This mindset has reshaped how I interact with technology, reminding me that every action online can have lasting consequences, and that constant awareness is key to protecting both privacy and security.
+        """
+        output_element = Element("output2")
+        output_element.write(paragraph2)
+    </py-script>
+
+</body>
+</html>
